@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dp"
+    android:paddingTop="25dp" >
+
+    <TextView
+        android:id="@+id/timetips"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="3dp"
+        android:background="@drawable/timetip_bg"
+        android:gravity="center"
+        android:src="@drawable/today"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/lable"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_toRightOf="@id/timetips"
+        android:gravity="center_vertical"
+        android:textColor="@color/titleColor"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:id="@+id/itemTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timetips"
+        android:layout_marginTop="5dp" >
+
+    </TableLayout>
+
+</RelativeLayout>
